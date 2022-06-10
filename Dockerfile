@@ -25,6 +25,8 @@ RUN wget --no-check-certificate https://raw.githubusercontent.com/stedolan/jq/ma
 RUN npm i -g lighthouse
 RUN npm i -g @lhci/cli
 RUN npm i -g typescript
+RUN npm i -g esbuild
+RUN npm i -g eslint
 
 RUN addgroup lhci \
     && adduser \
