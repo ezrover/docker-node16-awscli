@@ -27,6 +27,7 @@ RUN npm i -g @lhci/cli
 RUN npm i -g typescript
 RUN npm i -g esbuild
 RUN npm i -g eslint
+RUN npm i -g yarn
 
 RUN addgroup lhci \
     && adduser \
