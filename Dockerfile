@@ -22,12 +22,12 @@ RUN wget --no-check-certificate https://raw.githubusercontent.com/stedolan/jq/ma
     rm -f /tmp/jq-linux64.asc && \
     rm -f /tmp/jq-linux64
 
-RUN npm i -g lighthouse
-RUN npm i -g @lhci/cli
-RUN npm i -g typescript
-RUN npm i -g esbuild
-RUN npm i -g eslint
-RUN npm i -g yarn
+RUN npm i --location=global lighthouse
+RUN npm i --location=global @lhci/cli
+RUN npm i --location=global typescript
+RUN npm i --location=global esbuild
+RUN npm i --location=global eslint
+# RUN npm i --location=global yarn
 
 RUN addgroup lhci \
     && adduser \
